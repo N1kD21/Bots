@@ -14,9 +14,8 @@ bot.onText(/(.+)/, (msg, match) => {
 
   const chatId = msg.chat.id;
   const resp = match[1]; // the captured "whatever"
-  const date1 = new Date(msg.date);
   // send back the matched "whatever" to the chat
-  bot.sendMessage(chatId, resp + ' Мой Господин \n' + date1);
+  bot.sendMessage(chatId, resp + ' Мой Господин');
 });
 
 // Listen for any kind of message. There are different kinds of
