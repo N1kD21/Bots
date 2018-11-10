@@ -9,8 +9,12 @@ const bot = new TelegramBot(token, {polling: true});
 require('http').createServer().listen(process.env.PORT || 5000).on('request', function(req, res){
     res.end('')
 });
+
+const chatId = 594504840;
+
+bot.sendMessage(chatId, resp + ` Мой Господин ${chatId}`);
 // Matches "/echo [whatever]"
-bot.onText(/(.+)/, (msg, match) => {
+/*bot.onText(/(.+)/, (msg, match) => {
   // 'msg' is the received Message from Telegram
   // 'match' is the result of executing the regexp above on the text content
   // of the message
@@ -20,7 +24,7 @@ bot.onText(/(.+)/, (msg, match) => {
   // send back the matched "whatever" to the chat
   bot.sendMessage(chatId, resp + ` Мой Господин ${chatId}`);
 });
-
+*/
 // Listen for any kind of message. There are different kinds of
 // messages.
 /*bot.on('message', (msg) => {
