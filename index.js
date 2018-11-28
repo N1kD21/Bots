@@ -34,3 +34,6 @@ bot.sendMessage(chatId, resp + ` Мой Господин ${chatId}`);
   bot.sendMessage(chatId, 'Получил я Ваше сообщение, Господин:');
 });
 */
+
+
+// 28.11.2018
